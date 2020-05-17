@@ -9,6 +9,8 @@ You can add and remove movies to your personal list.
 
 1. install Heroku CLI [https://devcenter.heroku.com/articles/heroku-cli#download-and-install](https://devcenter.heroku.com/articles/heroku-cli#download-and-install)
 1. heroku plugin:install heroku-postgresql
+1. ./mvnw clean install
+1. heroku local -p 5000 (or whichever port you would like)
 
 ## Original Requirements
 
