@@ -7,10 +7,10 @@ You can add and remove movies to your personal list.
 
 ## Installation
 
-1. install Heroku CLI [https://devcenter.heroku.com/articles/heroku-cli#download-and-install](https://devcenter.heroku.com/articles/heroku-cli#download-and-install)
-1. heroku plugin:install heroku-postgresql
-1. ./mvnw clean install
-1. heroku local -p 5000 (or whichever port you would like)
+1. install Docker
+1. docker build . --tag suggestmovie
+1. docker run -d -p 5000:5000 -e "PORT=5000" suggestmovie
+1. open http://localhost:5000
 
 ## Original Requirements
 
