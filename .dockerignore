@@ -1,7 +1,9 @@
 target/
-!**/src/main/**
-!**/src/test/**
+.git/
+.gitignore
 .env
+.env.template
+Readme.md
 
 ### STS ###
 .apt_generated

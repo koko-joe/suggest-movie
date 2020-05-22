@@ -1,0 +1,16 @@
+version: '3.8'
+services:
+  webserver:
+    build: .
+    env_file: .env
+    ports:
+      - '${PORT}:${PORT}'
+    depends_on:
+      - database
+    container_name: smovie_webserver
+
+  database:
+    image: postgres:12.2
+    ports:
+      - '${DATABASE_PORT}:${DATABASE_PORT}'
+    env_file: .env

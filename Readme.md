@@ -7,10 +7,12 @@ You can add and remove movies to your personal list.
 
 ## Installation
 
-1. install Docker
-1. docker build . --tag suggestmovie
-1. docker run -d -p 5000:5000 -e "PORT=5000" suggestmovie
-1. open http://localhost:5000
+1. install Docker 19.03 or higher
+1. cp .env.template .env
+1. manually configure .env to your needs (optional)
+1. docker-compose up --detach --build
+1. docker exec --interactive --tty smovie_webserver /app/migrate_database.sh
+1. open [http://localhost:5000](http://localhost:5000) (if you haven't changed Port in .env)
 
 ## Original Requirements
 
